@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/sha3.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/rollups/ripemd160.js"></script>
+    <script src="http://procbits.com/media/2013/08/bitcoinjs-min.js"></script>
+    <script src="./assets/js/base32.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://crypto-js.googlecode.com/svn/tags/3.1.2/build/components/core-min.js"></script>
+    <script src="./assets/js/jquery.qrcode-0.10.1.min.js"></script>
+    <script src="./assets/js/papergen.js"></script>
+
+
+    <script type="text/javascript">
+
+    </script>
+    <style type="text/css">
+        body {
+            background-color: #42ce7e;
+            font-family: Arial;
+            font-size: 90%;
+        }
+
+        .pwcanvas {
+            width: 800;
+            height: 400;
+            background-color: white;
+            display: block
+        }
+
+    </style>
+</head>
+<body>
+<h1>Simple Nem Paperwallet - TESTNET!!</h1>
+<button onclick="drawwallet('paperwalletcanvas','paperwallet1.png',1)">Generate Paperwallet</button>
+<canvas class="pwcanvas" id="paperwalletcanvas"></canvas>
+<p>based on Address Generator by owon: http://owon.github.io/nemaddress/ <br/> not secure yet, do not use this! need to
+    get better random numbers</p>
+</body>
+</html>
